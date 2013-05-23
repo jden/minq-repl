@@ -1,5 +1,5 @@
 # minq-repl
-interactive querying for mongodb a la minq
+interactive querying for mongodb a la [minq](https://github.com/jden/minq)
 
 ## installation
 
