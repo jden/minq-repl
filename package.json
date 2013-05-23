@@ -3,14 +3,30 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "interactive querying for mongodb a la minq",
-  "keywords": ["minq", "mongodb", "cli", "repl", "query"],
+  "keywords": [
+    "minq",
+    "mongodb",
+    "cli",
+    "repl",
+    "query"
+  ],
   "main": "index.js",
+  "bin": "./index.js",
+  "preferGlobal": true,
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
   "repository": "git@github.com:jden/minq-repl.git",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "dependencies": {
+    "commander": "~1.1.1",
+    "minq": "~0.10.0",
+    "q": "~0.9.4",
+    "lodash": "~1.2.1",
+    "lug": "~0.1.0",
+    "maskurl": "~0.1.0"
+  },
   "devDependencies": {
     "chai": "~1.6.0",
     "mocha": "~1.9.0"

@@ -1,25 +1,26 @@
 # minq-repl
 interactive querying for mongodb a la minq
 
-## usage
-
-    var minqRepl = require('minq-repl')
-
-## api
-
-
 ## installation
 
-    $ npm install minq-repl
+    $ npm install -g minq-repl
 
+## usage
+
+    $ minq [options] <connectionString>
+
+    Options:
+
+      -h, --help     output usage information
+      -V, --version  output minq version number
+      -v, --verbose  output additional query information
+
+
+`connectionString` should be a MongoDB [Connection URI](http://docs.mongodb.org/manual/reference/connection-string/)
 
 ## running the tests
 
-From package root:
-
-    $ npm install
-    $ npm test
-
+feel free to contribute some :)
 
 ## contributors
 
