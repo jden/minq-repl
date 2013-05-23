@@ -1,7 +1,7 @@
 {
   "name": "minq-repl",
   "author": "jden <jason@denizac.org>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "interactive querying for mongodb a la minq",
   "keywords": [
     "minq",

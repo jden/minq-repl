@@ -1,3 +1,4 @@
+#! /usr/local/bin/node
 var minq = require('minq')
 var minqVer = require('minq/package.json').version
 var mr = require('commander')
