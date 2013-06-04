@@ -18,6 +18,8 @@ interactive querying for mongodb a la [minq](https://github.com/jden/minq)
 
 `connectionString` should be a MongoDB [Connection URI](http://docs.mongodb.org/manual/reference/connection-string/)
 
+Includes experimental support for ES6 syntax (arrow functions, yay!) via [six](https://npm.im/six).
+
 ## running the tests
 
 feel free to contribute some :)

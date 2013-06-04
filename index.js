@@ -8,6 +8,7 @@ var lug = require('lug')
 var Q = require('q')
 var vm = require('vm')
 var maskurl = require('maskurl')
+var six = require('six')
 
 mr.version(minqVer)
   .usage('[options] <connectionString>')
@@ -53,6 +54,11 @@ mr.command('*')
         ignoreUndefined: true,
         eval: function (code, context, file, cb) {
           var res, err
+
+          // transpile from ES6, but strip out extra crap
+          code = six.compile(code)
+          code = code.substring(180, code.length-4)
+
           try {
             res = vm.runInContext(code, context, file)
           } catch (e) {
